@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+  .maindiv {
+    height: 400px;
+    width: 100%;
+    background: rgb(5, 21, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .smallBox {
+    height: 100px;
+    width: 90%;
+
+    margin: 15px auto; 
+    display: flex;
+  
+
+   
+  }
+  .smallBoxes{
+    margin: auto;
+    height: 50px;
+    width: 30%;
+   
+    display: flex;
+  }
+  .smallBoxes .fa-solid{
+font-size: 40px;
+color: aliceblue;
+padding-left: 15px;
+  }
+  .smallBoxes p{
+    font-size: 18px;
+    margin-top: 15px;
+    color: aliceblue;
+    padding-left: 15px;
+      }
+
+      .email {
+        width: 70%;
+        height: 50px;
+        background:#fff;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+     
+        overflow: hidden;
+      }
+      .email input {
+        flex: 1;
+        border: 0;
+        outline: 0;
+        margin-left: 20px;
+      }
+      .email button {
+        background: #2134a0;
+        border: 0;
+        outline: 0;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 15px 30px;
+      }
+  .iconsboxes{
+
+    height: 50px;
+    margin-left: 50px;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  {{!-- .social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 37px;
+    background-color:rgb(103, 196, 233);
+   color: #2134a0;
+    margin: 4px;
+    transition: 0.4s;
+  } --}}
+  .social-icons a{
+      height: 35px;
+  width: 35px;
+  font-size: 25px;
+  color: #e5e5f5;
+margin: 7px;
+
+  line-height: 40px;
+  border: 0.5px solid #3e8286;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  .social-icons a:hover {
+    background-color: rgb(119, 179, 85);
+    
+  }
+    </style>
+</head>
+<body>
+        <footer class = "maindiv">
+      <div class="smallBox">
+        <div class="smallBoxes">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Passages of Lorem Ipsum available</p>
+        </div>
+        <div class="smallBoxes">
+          <i class="fa-solid fa-phone"></i>
+          <p>Call : +012334567890</p>
+        </div>
+        <div class="smallBoxes">
+        <i class="fa-solid fa-envelope"></i>
+          <p>mail@domain.com</p>
+        </div>
+      </div>
+      <div class="smallBox">
+        <form class="email">
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+
+    <div class="iconsboxes">
+      <div class="social-icons">
+      <a><i class="fab fa-facebook"></i></a>
+      <a><i class="fab fa-instagram"></i></a>
+      <a><i class="fab fa-github"></i></a>
+      <a><i class="fab fa-linkedin"></i></a>
+      <a><i class="fab fa-codepen"></i></a>
+    </div>
+  </div>
+   </div>
+      </div>
+
+    </footer>
+</body>
+</html>
