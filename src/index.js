@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
+const port = process.env.Port || 3000;
 
 const templatePath = path.join(__dirname, '../templates/views');
 const partialPath = path.join(__dirname, '../templates/partials');
@@ -27,6 +28,6 @@ app.get('/blog', (req, res) => {
   res.render('blog');
 });
 
-app.listen(8000, () => {
-  console.log('Server is running on port 8000');
+app.listen(port,()=>{
+  console.log(`listening the port at ${port} `)
 });
